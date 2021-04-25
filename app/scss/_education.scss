@@ -1,0 +1,37 @@
+.education {
+  color: #fff;
+  background: $cs-blue;
+  .edu-content {
+    .school {
+      h2 {
+        margin-bottom: 10px;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .logo {
+        height: 100%;
+        width: 20%;
+      }
+      .text {
+        width: 75%;
+      }
+      ul {
+        margin: 20px 0 20px 40px;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .title {
+    &::before {
+      background: #fff;
+    }
+    &::after {
+      background: $cs-blue;
+      content: "schools";
+    }
+  }
+}

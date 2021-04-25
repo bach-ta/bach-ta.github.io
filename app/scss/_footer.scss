@@ -1,0 +1,24 @@
+footer {
+  background: $cs-blue;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  span a {
+    color: $cs-dark-teal;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-line {
+  content: "asdasd";
+  position: relative;
+  bottom: 8px;
+  left: 50%;
+  width: 60%;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}

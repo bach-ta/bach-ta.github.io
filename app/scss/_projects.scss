@@ -1,0 +1,83 @@
+.projects {
+  color: #fff;
+  background: $cs-blue;
+  .title {
+    &::before {
+      background: #fff;
+    }
+    &::after {
+      background: $cs-blue;
+      content: "what i do";
+    }
+  }
+  .carousel .card {
+    background: rgba(153, 88, 214, 0.075);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 400px;
+    &:hover {
+      background: rgba(65, 171, 233, 0.250);
+      .box {
+        transform: scale(1.05);
+      }
+      img {
+        border-color: #fff;
+      }
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: top;
+      transition: all 0.3s ease;
+      height: 100%;
+      a {
+        margin-top: auto;
+        font-size: 30px;
+        text-decoration: none;
+        &:visited, &:hover, &:focus, &:active {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .text {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 10px 0 7px 0;
+    }
+    img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 30%;
+      border: 5px solid $cs-dark-teal;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid $cs-dark-teal !important;
+  transition: all 0.3s ease;
+  &.active {
+    width: 35px;
+    border-radius: 14px;
+    background: $cs-dark-teal !important;
+  }
+  &:hover {
+    background: $cs-dark-teal !important;
+  }
+}
