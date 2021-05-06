@@ -316,7 +316,7 @@ section .title::after {
   text-align: justify;
 }
 
-.about .about-content .right a {
+.about .about-content .right .resume {
   display: inline-block;
   background: #45a29e;
   color: #fff;
@@ -330,9 +330,39 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover {
+.about .about-content .right .resume:hover {
   color: #45a29e;
   background: none;
+}
+
+.about .about-content .right .profile-links {
+  margin-top: 10px;
+  padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+}
+
+.about .about-content .right .profile-links a {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-decoration: none;
+  color: #1f2833;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right .profile-links a:visited, .about .about-content .right .profile-links a:hover, .about .about-content .right .profile-links a:focus, .about .about-content .right .profile-links a:active {
+  text-decoration: none;
+  color: #1f2833;
+}
+
+.about .about-content .right .profile-links a:hover {
+  color: #1f2833da;
 }
 
 .education {
@@ -356,8 +386,23 @@ section .title::after {
 }
 
 .education .edu-content .school .logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   width: 20%;
+}
+
+.education .edu-content .school .logo img {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
 }
 
 .education .edu-content .school .text {
@@ -391,95 +436,43 @@ section .title::after {
   content: "what i know";
 }
 
-.skills .skills-content .column {
-  width: calc(50% - 30px);
+.skills .skills-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.skills .skills-content .left .text {
+.skills .skills-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
-  text-align: justify;
-}
-
-.skills .skills-content .left a {
-  display: inline-block;
-  background: #45a29e;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid #45a29e;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-  color: #45a29e;
-  background: none;
-}
-
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
+.skills .skills-content .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
+.skills .skills-content .cards .card {
+  width: 20%;
 }
 
-.skills .skills-content .right .line {
-  height: 5px;
+.skills .skills-content .cards .card img {
   width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #45a29e;
-}
-
-.skills .skills-content .right .cpp::before {
-  width: 80%;
-}
-
-.skills .skills-content .right .py::before {
-  width: 60%;
-}
-
-.skills .skills-content .right .html::before {
-  width: 80%;
-}
-
-.skills .skills-content .right .css::before {
-  width: 60%;
-}
-
-.skills .skills-content .right .js::before {
-  width: 80%;
 }
 
 .projects {
@@ -543,6 +536,7 @@ section .title::after {
   margin-top: auto;
   font-size: 30px;
   text-decoration: none;
+  color: white;
 }
 
 .projects .carousel .card .box a:visited, .projects .carousel .card .box a:hover, .projects .carousel .card .box a:focus, .projects .carousel .card .box a:active {
@@ -701,9 +695,19 @@ footer span a:hover {
         -ms-flex: 100%;
             flex: 100%;
   }
-  .education .edu-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+  .education .edu-content .school .logo {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .education .edu-content .school .logo img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .education .edu-content .school .text {
+    width: 100%;
   }
   .skills .skills-content .column {
     width: 100%;

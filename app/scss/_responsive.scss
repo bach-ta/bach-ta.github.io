@@ -70,9 +70,21 @@
   .about .about-content .right {
     flex: 100%;
   }
-  .education .edu-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+  .education .edu-content .school {
+    .logo {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 5%;
+      img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+    .text {
+      width: 100%;
+    }
   }
   .skills .skills-content .column {
     width: 100%;

@@ -4,78 +4,100 @@
     background: $cs-light;
     content: "what i know";
   }
+  // .skills-content {
+  //   .column {
+  //     width: calc(50% - 30px);
+  //   }
+  //   .left {
+  //     .text {
+  //       font-size: 20px;
+  //       font-weight: 600;
+  //       margin-bottom: 10px;
+  //     }
+  //     p {
+  //       text-align: justify;
+  //     }
+  //     a {
+  //       display: inline-block;
+  //       background: $cs-dark-teal;
+  //       color: #fff;
+  //       font-size: 18px;
+  //       font-weight: 500;
+  //       padding: 8px 16px;
+  //       margin-top: 20px;
+  //       border-radius: 6px;
+  //       border: 2px solid $cs-dark-teal;
+  //       transition: all 0.3s ease;
+  //       &:hover {
+  //         color: $cs-dark-teal;
+  //         background: none;
+  //       }
+  //     }
+  //   }
+  //   .right {
+  //     .bars {
+  //       margin-bottom: 15px;
+  //     }
+  //     .info {
+  //       display: flex;
+  //       margin-bottom: 5px;
+  //       align-items: center;
+  //       justify-content: space-between;
+  //     }
+  //     span {
+  //       font-weight: 500;
+  //       font-size: 18px;
+  //     }
+  //     .line {
+  //       height: 5px;
+  //       width: 100%;
+  //       background: lightgrey;
+  //       position: relative;
+  //       &::before {
+  //         content: "";
+  //         position: absolute;
+  //         height: 100%;
+  //         left: 0;
+  //         top: 0;
+  //         background: $cs-dark-teal;
+  //       }
+  //     }
+  //     .cpp::before {
+  //       width: 80%;
+  //     }
+  //     .py::before {
+  //       width: 60%;
+  //     }
+  //     .html::before {
+  //       width: 80%;
+  //     }
+  //     .css::before {
+  //       width: 60%;
+  //     }
+  //     .js::before {
+  //       width: 80%;
+  //     }
+  //   }
+  // }
   .skills-content {
-    .column {
-      width: calc(50% - 30px);
+    align-items: center;
+    justify-content: center;
+    .text {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
-    .left {
-      .text {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      p {
-        text-align: justify;
-      }
-      a {
-        display: inline-block;
-        background: $cs-dark-teal;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 8px 16px;
-        margin-top: 20px;
-        border-radius: 6px;
-        border: 2px solid $cs-dark-teal;
-        transition: all 0.3s ease;
-        &:hover {
-          color: $cs-dark-teal;
-          background: none;
+    .cards {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        width: 20%;
+        img {
+          width: 100%
         }
-      }
-    }
-    .right {
-      .bars {
-        margin-bottom: 15px;
-      }
-      .info {
-        display: flex;
-        margin-bottom: 5px;
-        align-items: center;
-        justify-content: space-between;
-      }
-      span {
-        font-weight: 500;
-        font-size: 18px;
-      }
-      .line {
-        height: 5px;
-        width: 100%;
-        background: lightgrey;
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background: $cs-dark-teal;
-        }
-      }
-      .cpp::before {
-        width: 80%;
-      }
-      .py::before {
-        width: 60%;
-      }
-      .html::before {
-        width: 80%;
-      }
-      .css::before {
-        width: 60%;
-      }
-      .js::before {
-        width: 80%;
       }
     }
   }
