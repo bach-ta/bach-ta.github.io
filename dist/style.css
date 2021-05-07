@@ -234,8 +234,8 @@ section .title::after {
 
 .home .center {
   max-width: 1300px;
-  padding: 0 80px;
-  margin: auto 0 auto 30px;
+  padding: 0 23px;
+  margin: auto;
 }
 
 .home .home-content {
@@ -258,7 +258,7 @@ section .title::after {
   width: 100%;
   z-index: 1;
   color: #adcfc5;
-  font-size: 100px !important;
+  font-size: 100px;
   font-weight: 900;
   margin-left: -3px;
 }
@@ -267,7 +267,7 @@ section .title::after {
   text-shadow: 4px 3px #8f879756;
   width: 100%;
   color: white;
-  font-size: 40px !important;
+  font-size: 40px;
   font-weight: 700;
   margin: 5px 0;
 }
@@ -688,7 +688,7 @@ footer span a:hover {
     font-size: 25px;
   }
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 80px;
   }
   .home .home-content .text-3 {
     font-size: 35px;
@@ -744,7 +744,7 @@ footer span a:hover {
     font-size: 60px;
   }
   .home .home-content .text-3 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .home .home-content a {
     font-size: 20px;
@@ -761,7 +761,6 @@ footer span a:hover {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .about .about-content .right .text,
   .skills .skills-content .cards .card {
     margin-left: 30px;
     margin-right: 30px;
