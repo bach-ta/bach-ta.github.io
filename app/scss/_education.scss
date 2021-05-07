@@ -13,9 +13,10 @@
         justify-content: center;
         height: 100%;
         width: 20%;
+        // display: block;
+        // margin: auto;
         img {
-          margin-left: auto;
-          margin-right: auto;
+          margin: auto;
           align-items: center;
           justify-content: center;
           display: block;
@@ -39,7 +40,7 @@
     }
     &::after {
       background: $cs-blue;
-      content: "uwuwuwuwu";
+      // content: "uwuwuwuwu";
     }
   }
 }
