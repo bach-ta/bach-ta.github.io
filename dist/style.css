@@ -555,14 +555,25 @@ section .title::after {
   height: 100%;
 }
 
-.projects .carousel .card .box a {
+.projects .carousel .card .box .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .carousel .card .box .links a {
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 30px;
   text-decoration: none;
   color: white;
 }
 
-.projects .carousel .card .box a:visited, .projects .carousel .card .box a:hover, .projects .carousel .card .box a:focus, .projects .carousel .card .box a:active {
+.projects .carousel .card .box .links a:visited, .projects .carousel .card .box .links a:hover, .projects .carousel .card .box .links a:focus, .projects .carousel .card .box .links a:active {
   text-decoration: none;
   color: white;
 }
@@ -631,7 +642,7 @@ footer span a:hover {
   bottom: 8px;
   left: 50%;
   width: 60%;
-  height: 3px;
+  height: 1px;
   background: white;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
