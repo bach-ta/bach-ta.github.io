@@ -6,16 +6,17 @@
   }
   .about-content {
     .left {
-      width: 45%;
+      width: 35%;
       img {
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         object-fit: cover;
         border-radius: 6px;
+        box-shadow: -5px -5px 5px rgb(211, 121, 121);
       }
     }
     .right {
-      width: 55%;
+      width: 65%;
       .text {
         font-size: 25px;
         font-weight: 600;
