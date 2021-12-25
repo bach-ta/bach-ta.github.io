@@ -1,24 +1,22 @@
+// v1 is when the section above is blue, v2 when cs-light
+
 footer {
-  background: $cs-blue;
+  // background: $cs-blue; ///// v1
+  background: $cs-light; ///// v2
   padding: 15px 23px;
-  color: #fff;
+  // color: #fff; ///// v1
+  color: $cs-blue; ///// v2
   text-align: center;
-  span a {
-    color: $cs-dark-teal;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  font-weight: bold;
 }
 
 .footer-line {
-  // content: "asdasd";
   position: relative;
   bottom: 8px;
   left: 50%;
   width: 60%;
-  height: 1px;
-  background: white;
+  height: 3px;
+  // background: white; ///// v1
+  background: $cs-blue; ///// v2
   transform: translateX(-50%);
 }

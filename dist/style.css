@@ -43,6 +43,7 @@ section {
 
 .about,
 .education,
+.experience,
 .skills,
 .projects,
 footer {
@@ -51,6 +52,7 @@ footer {
 
 .about .about-content,
 .education .edu-content,
+.experience .exp-content,
 .skills .skills-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,13 +292,10 @@ section .title::after {
 }
 
 .about .about-content .left img {
-  height: 350px;
-  width: 350px;
+  height: auto;
+  max-width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 6px;
-  -webkit-box-shadow: -5px -5px 5px #d37979;
-          box-shadow: -5px -5px 5px #d37979;
 }
 
 .about .about-content .right {
@@ -372,6 +371,7 @@ section .title::after {
 }
 
 .education .edu-content .school {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +390,7 @@ section .title::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  height: auto;
   width: 20%;
 }
 
@@ -424,6 +424,62 @@ section .title::after {
 
 .education .title::after {
   background: #1f2833;
+}
+
+.experience {
+  background: #c5c6c7;
+}
+
+.experience .exp-content .company {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.experience .exp-content .company h2 {
+  margin-bottom: 10px;
+}
+
+.experience .exp-content .company .text {
+  width: 65%;
+}
+
+.experience .exp-content .company .logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 30%;
+}
+
+.experience .exp-content .company .logo img {
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+}
+
+.experience .exp-content .company ul {
+  margin: 20px 0 20px 40px;
+}
+
+.experience .exp-content img {
+  width: 100%;
+  height: auto;
+}
+
+.experience .title::after {
+  background: #c5c6c7;
 }
 
 .skills {
@@ -624,19 +680,11 @@ section .title::after {
 }
 
 footer {
-  background: #1f2833;
+  background: #c5c6c7;
   padding: 15px 23px;
-  color: #fff;
+  color: #1f2833;
   text-align: center;
-}
-
-footer span a {
-  color: #45a29e;
-  text-decoration: none;
-}
-
-footer span a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .footer-line {
@@ -644,8 +692,8 @@ footer span a:hover {
   bottom: 8px;
   left: 50%;
   width: 60%;
-  height: 1px;
-  background: white;
+  height: 3px;
+  background: #1f2833;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }

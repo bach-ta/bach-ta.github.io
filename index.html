@@ -29,8 +29,9 @@
         <li><a href="#home" class="menu-btn">Home</a></li>
         <li><a href="#about" class="menu-btn">About</a></li>
         <li><a href="#education" class="menu-btn">Education</a></li>
-        <li><a href="#skills" class="menu-btn">Skills</a></li>
+        <li><a href="#experience" class="menu-btn">Experience</a></li>
         <li><a href="#projects" class="menu-btn">Projects</a></li>
+        <li><a href="#skills" class="menu-btn">Skills</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -42,7 +43,6 @@
   <section class="home" id="home">
     <div class="center">
       <div class="home-content">
-        <!-- <div class="text-1">Hello, my name is</div> -->
         <div class="text-2">Bach Ta</div>
         <div class="text-3">Computer Science Student</div>
       </div>
@@ -55,14 +55,16 @@
       <h2 class="title">About Me</h2>
       <div class="about-content">
         <div class="column left">
-          <img src="images/pic.jpg" alt="">
+          <!-- some how linked in badge doesn't work -->
+          <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="bach-ta" data-version="v1"></div> -->
+          <img src="images/bitmoji.png" alt="">
         </div>
         <div class="column right">
           <div class="text">My name is Bach Ta</div>
-          <p>I am a student majoring in the Computer Science, Honours, Co-op program at the University of Waterloo on term 2A. Since I was a child, I have been fascinated with mathematics and solving problems. In grade 10, I started coding by doing some competitive programming using C++ - my first programming language. After three years, I have nurtured my passion by learning new skills, gaining more experience and working on projects. Currently, I am seeking Fall 2021 internships in the software development field.</p>
+          <p>I am a student majoring in the Computer Science, Honours, Co-op program at the University of Waterloo on term 2B. Since I was a child, I have been fascinated with mathematics and problem-solving. I started typing my first lines of code in grade 10, using C++ for competitive programming. After four years, I have developed a passion for programming by learning new skills, gaining more experience and working on projects. Currently, I am seeking Spring 2022 internships in the software development field.</p>
           <br>
 
-          <p>I'm also a speedcuber. My personal records are 8.39 seconds (PB) and 10.70 seconds (average of 5).</p>
+          <p>I speedcube. My personal records are 5.94s PB and 9.08s Ao5.</p>
           <br>
           <div class="profile-links">
             <!-- <a href="./resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a> -->
@@ -88,9 +90,8 @@
           <div class="column text">
             <h2>University of Waterloo</h2>
             <p>
-              I am currently pursuing a bachelor degree in the Computer Science Honours, Co-op Program. I have just
-              finished my first year with a cumulative GPA of 95.8 (98.83 Math faculty GPA), where I have achieved a
-              final grade of 100/100 in 4 courses:
+              I am currently pursuing a bachelor degree in the Computer Science Honours, Co-op program. I have
+              finished three study terms with 94.33 cumulative GPA, 96.30 Math faculty GPA, and final grades of 100/100 in 4 courses:
             </p>
             <ul class="courses-list">
               <li><strong>CS 135 -</strong> Designing Functional Programs</li>
@@ -99,13 +100,93 @@
               <li><strong>MATH 138 -</strong> Calculus 2 for Honours Mathematics</li>
             </ul>
             <p>
-              In this 2A term, I'm taking some Math/CS courses including Object-Oriented Software Development, Logic and
-              Computation, Computer Organization and Design, and Probability.
+              In this 2B term, I'm taking some Math/CS courses including Data Structures, Combinatorics, and Statistics.
+            </p>
+            <br>
+            <p>
+              I was honored to be one of the eight recipients of the Computer Science International Student Upper-Year Scholarship in 2021, valued at $15,000.
             </p>
           </div>
         </div>
+
       </div>
 
+    </div>
+  </section>
+
+  <!-- experience section start -->
+  <section class="experience" id="experience">
+    <div class="max-width">
+      <h2 class="title">Experience</h2>
+      <div class="exp-content">
+
+        <div class="company">
+          <div class="column text">
+            <h2>Math Content Developer @ Maplesoft</h2>
+            <ul class="bullets">
+              <li>Used Maple scripting language to generate interactive quizzes and plots for more than 20 math documents.</li>
+              <li>Created and tested how-to documents for new features of Maple Learn online tool.</li>
+              <li>Wrote lectures and examples for Grade 9 math concepts, in response to the changes in Ontario curriculum.</li>
+            </ul>
+          </div>
+          <div class="column logo">
+            <img src="images/Maplesoft_logo_Icon2.png" alt="maplesoft-logo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- projects section start -->
+  <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="title">Projects</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="images/uwlink.png" alt="">
+            <div class="text">UW Link</div>
+            <p>A platform for students to connect socially. Worked in a team of 4, using HTML/CSS/JS, Flask & MongoDB.</p>
+            <div class="links">
+              <a href="https://github.com/bach-ta/UW-Link" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="http://www.uwlink.live/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/mc.png" alt="">
+            <div class="text">Algebra Calculator</div>
+            <p>A C++ calculator program featuring some important algebra/number theory algorithms.</p>
+            <div class="links">
+              <a href="https://github.com/bach-ta/algebra-calculator" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.onlinegdb.com/B1Z5x47uO" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/ct.png" alt="">
+            <div class="text">Cube Timer</div>
+            <p>A speedcubing timer built with React.js and MaterialUI.</p>
+            <div class="links">
+              <a href="https://github.com/bach-ta/cube-timer" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://glas-cube-timer.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/ws.png" alt="">
+            <div class="text">This website</div>
+            <p>My personal portfolio website. Built with HTML/CSS and JavaScript.</p>
+            <div class="links">
+              <a href="https://github.com/bach-ta/bach-ta.github.io" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -175,47 +256,10 @@
             <div class="logo"><img src="/images/racket_logo.svg" alt="racket"></div>
             <p class="text">Racket</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- projects section start -->
-  <section class="projects" id="projects">
-    <div class="max-width">
-      <h2 class="title">Projects</h2>
-      <div class="carousel owl-carousel">
-        <div class="card">
-          <div class="box">
-            <img src="images/mc.png" alt="">
-            <div class="text">Algebra Calculator</div>
-            <p>A C++ calculator program featuring some important algebra/number theory algorithms.</p>
-            <div class="links">
-              <a href="https://github.com/bach-ta/algebra-calculator" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.onlinegdb.com/B1Z5x47uO" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="images/ct.png" alt="">
-            <div class="text">Cube Timer</div>
-            <p>A speedcubing timer built with React.js and MaterialUI.</p>
-            <div class="links">
-              <a href="https://github.com/bach-ta/cube-timer" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://glas-cube-timer.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="images/ws.png" alt="">
-            <div class="text">This website</div>
-            <p>My personal portfolio website. Built with HTML/CSS and JavaScript.</p>
-            <div class="links">
-              <a href="https://github.com/bach-ta/bach-ta.github.io" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
+          <!-- <div class="card maple">
+            <div class="logo"><img src="/images/Maple_logo_Icon2.png" alt="maple"></div>
+            <p class="text">Maple</p>
+          </div> -->
         </div>
       </div>
     </div>
@@ -232,6 +276,7 @@
 
   <canvas class="background"></canvas>
   <script src="app/js/script.js"></script>
+  <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
 </body>
 
 </html>

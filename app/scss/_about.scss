@@ -8,11 +8,12 @@
     .left {
       width: 35%;
       img {
-        height: 350px;
-        width: 350px;
+        height: auto;
+        max-width: 90%;
         object-fit: cover;
-        border-radius: 6px;
-        box-shadow: -5px -5px 5px rgb(211, 121, 121);
+        // border and box shadow active when actual image is used
+        // border-radius: 6px;
+        // box-shadow: -5px -5px 5px rgb(211, 121, 121);
       }
     }
     .right {

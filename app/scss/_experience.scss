@@ -1,8 +1,7 @@
-.education {
-  color: #fff;
-  background: $cs-blue;
-  .edu-content {
-    .school {
+.experience {
+  background: $cs-light;
+  .exp-content {
+    .company {
       // padding-top: 15px;
       // padding-bottom: 15px;
       width: 100%;
@@ -12,21 +11,19 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      .text {
+        width: 65%;
+      }
       .logo {
         justify-content: center;
         height: auto;
-        width: 20%;
-        // display: block;
-        // margin: auto;
+        width: 30%;
         img {
           margin: auto;
           align-items: center;
           justify-content: center;
           display: block;
         }
-      }
-      .text {
-        width: 75%;
       }
       ul {
         margin: 20px 0 20px 40px;
@@ -38,12 +35,8 @@
     }
   }
   .title {
-    &::before {
-      background: #fff;
-    }
     &::after {
-      background: $cs-blue;
-      // content: "uwuwuwuwu";
+      background: $cs-light;
     }
   }
 }

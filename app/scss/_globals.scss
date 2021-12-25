@@ -35,6 +35,7 @@ section {
 }
 .about,
 .education,
+.experience,
 .skills,
 .projects,
 footer {
@@ -42,6 +43,7 @@ footer {
 }
 .about .about-content,
 .education .edu-content,
+.experience .exp-content,
 .skills .skills-content {
   display: flex;
   flex-wrap: wrap;
