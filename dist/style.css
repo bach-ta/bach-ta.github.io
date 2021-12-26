@@ -469,6 +469,10 @@ section .title::after {
   display: block;
 }
 
+.experience .exp-content .company .logo-top {
+  display: none;
+}
+
 .experience .exp-content .company ul {
   margin: 20px 0 20px 40px;
 }
@@ -792,6 +796,26 @@ footer {
   .education .edu-content .school .text {
     width: 100%;
   }
+  .experience .exp-content .company .logo {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .experience .exp-content .company .logo img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .experience .exp-content .company .logo-top {
+    display: block !important;
+  }
+  .experience .exp-content .company .logo-bottom {
+    display: none;
+  }
+  .experience .exp-content .company .text {
+    width: 100%;
+  }
   .skills .skills-content .cards {
     width: 100%;
   }
@@ -811,6 +835,9 @@ footer {
     font-size: 20px;
   }
   .education .edu-content .card {
+    width: 100%;
+  }
+  .experience .exp-content .card {
     width: 100%;
   }
 }
