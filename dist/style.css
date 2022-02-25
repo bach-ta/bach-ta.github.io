@@ -188,7 +188,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #45a29db0;
+  background: #283e58b0;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -296,6 +296,7 @@ section .title::after {
   max-width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 6px;
 }
 
 .about .about-content .right {
@@ -410,7 +411,7 @@ section .title::after {
 }
 
 .education .edu-content .school ul {
-  margin: 20px 0 20px 40px;
+  margin: 5px 0 20px 40px;
 }
 
 .education .edu-content img {
@@ -431,6 +432,8 @@ section .title::after {
 }
 
 .experience .exp-content .company {
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,6 +443,10 @@ section .title::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.experience .exp-content .company .loc {
+  float: right;
 }
 
 .experience .exp-content .company h2 {
@@ -459,22 +466,19 @@ section .title::after {
 }
 
 .experience .exp-content .company .logo img {
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: block;
-}
-
-.experience .exp-content .company .logo-top {
-  display: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .experience .exp-content .company ul {
   margin: 20px 0 20px 40px;
+  text-align: justify;
+}
+
+.experience .exp-content .company-logo-right .logo-top {
+  display: none;
 }
 
 .experience .exp-content img {
