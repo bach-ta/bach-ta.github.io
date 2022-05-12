@@ -12,6 +12,9 @@
 }
 
 @media (max-width: 991px) {
+  .home {
+    background-attachment: scroll;
+  }
   .max-width {
     padding: 0 50px;
   }
@@ -45,9 +48,6 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
-  }
-  .home {
-    background-attachment: scroll;
   }
   .home .home-content .text-2 {
     font-size: 80px;
