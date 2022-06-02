@@ -279,6 +279,12 @@ section .title::after {
   font-weight: 500;
 }
 
+#wca-link {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .about {
   background: #c5c6c7;
 }
@@ -720,6 +726,9 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .home {
+    background-attachment: scroll;
+  }
   .max-width {
     padding: 0 50px;
   }
@@ -755,9 +764,6 @@ footer {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
-  }
-  .home {
-    background-attachment: scroll;
   }
   .home .home-content .text-2 {
     font-size: 80px;
